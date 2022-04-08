@@ -1,27 +1,36 @@
 package com.hackerearth.hackathonHackerearth;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 @Data
+@Builder
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonPropertyOrder({"bookID", "title", "authors", "average_rating", "isbn", "language_code", "ratings_count", "price"})
-public class BookDTO {
+@Table(name = "BOOK")
+public class Book {
+    @Id
     private Long bookID;
+    @Column(length = 65535)
     private String title;
+    @Column(length = 1024)
     private String authors;
+    @Column(length = 1024)
     private String average_rating;
+    @Column(length = 1024)
     private String isbn;
+    @Column(length = 1024)
     private String language_code;
+    @Column(length = 1024)
     private String ratings_count;
+    @Column(length = 1024)
     private String price;
-
 }
