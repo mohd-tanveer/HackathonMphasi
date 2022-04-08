@@ -1,4 +1,4 @@
-package com.hackerearth.hackathonHackerearth;
+package com.hackerearth.hackathonHackerearth.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

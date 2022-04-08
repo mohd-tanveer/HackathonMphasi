@@ -1,4 +1,4 @@
-package com.hackerearth.hackathonHackerearth;
+package com.hackerearth.hackathonHackerearth.Dto;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

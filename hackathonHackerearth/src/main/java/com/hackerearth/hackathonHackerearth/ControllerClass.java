@@ -1,6 +1,8 @@
 package com.hackerearth.hackathonHackerearth;
 
 
+import com.hackerearth.hackathonHackerearth.Dto.BookDTO;
+import com.hackerearth.hackathonHackerearth.Entity.Book;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
